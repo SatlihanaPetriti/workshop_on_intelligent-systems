@@ -1,0 +1,372 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21/"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-21="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#HasAccommodation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#HasAccommodation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#TouristPlan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Accommodation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#HasBudget -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#HasBudget">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#TouristPlan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Budget"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#HasDestination -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#HasDestination">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#TouristPlan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Destionation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#HasTransport -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#HasTransport">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#TouristPlan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Transport"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#IncludesActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#IncludesActivity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#TouristPlan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#ScheduledAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#ScheduledAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#TimeSlot"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#ActivityType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#ActivityType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Tourist"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Cost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Cost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Transport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Duration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#EndTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#EndTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#TimeSlot"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Destionation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Mode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Mode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Transport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Tourist"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#PopularityRank -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#PopularityRank">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Accommodation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Destionation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Preferences -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Preferences">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Tourist"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#PriceperNight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#PriceperNight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Accommodation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#StartTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#StartTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#TimeSlot"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#TotalAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#TotalAmount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Budget"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Accommodation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Accommodation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Accommodation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Budget -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Budget"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Destionation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Destionation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#TimeSlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#TimeSlot"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Tourist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Tourist">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#HasAccommodation"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Accommodation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#TouristPlan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#TouristPlan"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Transport"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#ErikGarciaBudget -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#ErikGarciaBudget">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Budget"/>
+        <untitled-ontology-21:TotalAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2000.0</untitled-ontology-21:TotalAmount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Erik_Garcia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Erik_Garcia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Tourist"/>
+        <untitled-ontology-21:HasAccommodation rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#ParisHotel"/>
+        <untitled-ontology-21:HasBudget rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#ErikGarciaBudget"/>
+        <untitled-ontology-21:HasDestination rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Paris"/>
+        <untitled-ontology-21:HasTransport rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#FlightToParis"/>
+        <untitled-ontology-21:IncludesActivity rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#LouvreVisit"/>
+        <untitled-ontology-21:Age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-21:Age>
+        <untitled-ontology-21:Name>Erik Garcia</untitled-ontology-21:Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#FlightToParis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#FlightToParis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Transport"/>
+        <untitled-ontology-21:Cost rdf:datatype="http://www.w3.org/2001/XMLSchema#double">300.0</untitled-ontology-21:Cost>
+        <untitled-ontology-21:Mode>Airplane</untitled-ontology-21:Mode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#LouvreMorningSlot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#LouvreMorningSlot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#TimeSlot"/>
+        <untitled-ontology-21:EndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-10T12:00:00</untitled-ontology-21:EndTime>
+        <untitled-ontology-21:StartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-10T09:00:00</untitled-ontology-21:StartTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#LouvreVisit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#LouvreVisit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Activity"/>
+        <untitled-ontology-21:ScheduledAt rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#LouvreMorningSlot"/>
+        <untitled-ontology-21:ActivityType>Museum Visit</untitled-ontology-21:ActivityType>
+        <untitled-ontology-21:Duration>3 Hours</untitled-ontology-21:Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Paris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Paris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Destionation"/>
+        <untitled-ontology-21:Location>Paris, France</untitled-ontology-21:Location>
+        <untitled-ontology-21:PopularityRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</untitled-ontology-21:PopularityRank>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#ParisHotel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#ParisHotel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#Accommodation"/>
+        <untitled-ontology-21:PriceperNight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">150.0</untitled-ontology-21:PriceperNight>
+        <untitled-ontology-21:Type>Hotel</untitled-ontology-21:Type>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

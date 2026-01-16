@@ -1,0 +1,420 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21">
+    <Prefix name="" IRI="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-21" IRI="http://www.semanticweb.org/hp/ontologies/2024/11/untitled-ontology-21#"/>
+    <Declaration>
+        <Class IRI="#Accommodation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Budget"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Destionation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeSlot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tourist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TouristPlan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasAccommodation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasBudget"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasDestination"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasTransport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IncludesActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ScheduledAt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ActivityType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Duration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EndTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Mode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PopularityRank"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Preferences"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PriceperNight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#StartTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TotalAmount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ErikGarciaBudget"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Erik_Garcia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FlightToParis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LouvreMorningSlot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LouvreVisit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paris"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ParisHotel"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Tourist"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#HasAccommodation"/>
+            <Class IRI="#Accommodation"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Budget"/>
+        <NamedIndividual IRI="#ErikGarciaBudget"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tourist"/>
+        <NamedIndividual IRI="#Erik_Garcia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transport"/>
+        <NamedIndividual IRI="#FlightToParis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimeSlot"/>
+        <NamedIndividual IRI="#LouvreMorningSlot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#LouvreVisit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Destionation"/>
+        <NamedIndividual IRI="#Paris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Accommodation"/>
+        <NamedIndividual IRI="#ParisHotel"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasAccommodation"/>
+        <NamedIndividual IRI="#Erik_Garcia"/>
+        <NamedIndividual IRI="#ParisHotel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasBudget"/>
+        <NamedIndividual IRI="#Erik_Garcia"/>
+        <NamedIndividual IRI="#ErikGarciaBudget"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasDestination"/>
+        <NamedIndividual IRI="#Erik_Garcia"/>
+        <NamedIndividual IRI="#Paris"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasTransport"/>
+        <NamedIndividual IRI="#Erik_Garcia"/>
+        <NamedIndividual IRI="#FlightToParis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IncludesActivity"/>
+        <NamedIndividual IRI="#Erik_Garcia"/>
+        <NamedIndividual IRI="#LouvreVisit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ScheduledAt"/>
+        <NamedIndividual IRI="#LouvreVisit"/>
+        <NamedIndividual IRI="#LouvreMorningSlot"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TotalAmount"/>
+        <NamedIndividual IRI="#ErikGarciaBudget"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Age"/>
+        <NamedIndividual IRI="#Erik_Garcia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Erik_Garcia"/>
+        <Literal>Erik Garcia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Cost"/>
+        <NamedIndividual IRI="#FlightToParis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">300.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Mode"/>
+        <NamedIndividual IRI="#FlightToParis"/>
+        <Literal>Airplane</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EndTime"/>
+        <NamedIndividual IRI="#LouvreMorningSlot"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-10T12:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#StartTime"/>
+        <NamedIndividual IRI="#LouvreMorningSlot"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-10T09:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ActivityType"/>
+        <NamedIndividual IRI="#LouvreVisit"/>
+        <Literal>Museum Visit</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Duration"/>
+        <NamedIndividual IRI="#LouvreVisit"/>
+        <Literal>3 Hours</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Paris"/>
+        <Literal>Paris, France</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PopularityRank"/>
+        <NamedIndividual IRI="#Paris"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PriceperNight"/>
+        <NamedIndividual IRI="#ParisHotel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">150.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Type"/>
+        <NamedIndividual IRI="#ParisHotel"/>
+        <Literal>Hotel</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasAccommodation"/>
+        <Class IRI="#TouristPlan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasBudget"/>
+        <Class IRI="#TouristPlan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasDestination"/>
+        <Class IRI="#TouristPlan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasTransport"/>
+        <Class IRI="#TouristPlan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IncludesActivity"/>
+        <Class IRI="#TouristPlan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ScheduledAt"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasAccommodation"/>
+        <Class IRI="#Accommodation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasBudget"/>
+        <Class IRI="#Budget"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasDestination"/>
+        <Class IRI="#Destionation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasTransport"/>
+        <Class IRI="#Transport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IncludesActivity"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ScheduledAt"/>
+        <Class IRI="#TimeSlot"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ActivityType"/>
+        <Class IRI="#Activity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Age"/>
+        <Class IRI="#Tourist"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Cost"/>
+        <Class IRI="#Transport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Duration"/>
+        <Class IRI="#Activity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#EndTime"/>
+        <Class IRI="#TimeSlot"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Location"/>
+        <Class IRI="#Destionation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Mode"/>
+        <Class IRI="#Transport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Name"/>
+        <Class IRI="#Tourist"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#PopularityRank"/>
+        <Class IRI="#Accommodation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#PopularityRank"/>
+        <Class IRI="#Destionation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Preferences"/>
+        <Class IRI="#Tourist"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#PriceperNight"/>
+        <Class IRI="#Accommodation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#StartTime"/>
+        <Class IRI="#TimeSlot"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TotalAmount"/>
+        <Class IRI="#Budget"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Type"/>
+        <Class IRI="#Accommodation"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#ActivityType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Age"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Cost"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Duration"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EndTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Location"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Mode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PopularityRank"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Preferences"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PriceperNight"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#StartTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TotalAmount"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
